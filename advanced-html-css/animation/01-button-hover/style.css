@@ -1,19 +1,27 @@
-#transition-container {
+button {
+  border-radius: 8px;
+  border: none;
+  background-color: blue;
+  color: white;
+  font-size: 18px;
+  padding: 18px 24px;
+  text-align: center;
+}
+
+#container {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 button {
-  border-radius: 8px;
-  border: none;
-  background-color: #2563eb;
-  color: white;
-  font-size: 18px;
-  padding: 16px 24px;
-  text-align: center;
+  transition: transform .10s ease-out;
+}
+
+button:hover {
+    transform: scale(1.2);
 }
